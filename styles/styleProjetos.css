@@ -1,0 +1,11 @@
+main{
+    height: 100vh;
+}
+
+.container-projeto{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin: 5vh 10vh 5vh 10vh;
+    background-color: aqua;
+}
