@@ -12,7 +12,6 @@ body{
 }
 
 :root {
-    --cor-principal: ;
-    --cor-secundaria:;
-    --cor-texto: ;
+    --cor-principal: #000000;
+    --cor-secundaria:#cccaca;
   }

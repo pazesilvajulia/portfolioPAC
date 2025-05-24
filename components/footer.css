@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    margin: 0;
+    height: 12.9vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vh;
+    width: 50vh;
+    
+}
+
+.socials-logo{
+    height: 6.5vh;
+    transition: transform 0.3s ease;
+}
+
+.socials-logo:hover{
+    transform: scale(1.1);
+
+}
+

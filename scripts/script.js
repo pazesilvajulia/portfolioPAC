@@ -1,3 +1,4 @@
+/* ------------- COMPONENTES -----------*/
 
 fetch('/components/header.html')
   .then(response => response.text())
@@ -10,3 +11,19 @@ fetch('/components/footer.html')
   .then(data => {
     document.getElementById('footer-container').innerHTML = data;
   });
+
+
+  /* ------------- CURSOR -----------*/
+
+  document.addEventListener('mousemove', function(e) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    document.body.appendChild(particle);
+    // Posiciona a partícula no mouse
+    particle.style.left = `${e.clientX}px`;
+    particle.style.top = `${e.clientY}px`;
+    // Remove a partícula após a animação
+    setTimeout(() => {
+      particle.remove();
+    }, 800);
+   });

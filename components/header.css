@@ -1,0 +1,28 @@
+.header{
+    margin: 2vh 4vh 2vh 2vh;
+    display: flex;
+    height: 10vh;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direita{
+    display: flex;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: large;
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+.main-logo{
+    height: 12vh;
+}
