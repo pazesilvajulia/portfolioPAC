@@ -7,5 +7,58 @@ main{
     display: flex;
     align-items: center;
     margin: 5vh 10vh 5vh 10vh;
-    background-color: aqua;
+    justify-content: space-evenly;
+}
+
+/*----------------- CARD PROJETOS -------------------*/
+
+.card {
+  width: 250px;
+  height: auto;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  box-shadow: 20px 20px 100px 5px rgba(128, 128, 128, 0.575);
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 150px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image > img {
+  width: 100%;
+  height: 150px;
+  border-radius: 6px 6px 0 0;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 2vh;
+  font-weight: 600;
+  color: #91057e;
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
 }
