@@ -1,10 +1,11 @@
 .header{
     margin: 2vh 4vh 2vh 2vh;
-    display: flex;
-    height: 10vh;
+    height: 12vh;
 
+    display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .direita{
