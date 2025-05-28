@@ -1,10 +1,11 @@
 .main-container{
-    height: 250vh;
+    height: 200vh;
     margin: 10vh;
     text-align: center;
 }
 
 .main-container > a{
+    margin-top: 10vh;
     display: inline-block;
     -webkit-text-fill-color: white;
     background-color: rgb(0, 0, 0);

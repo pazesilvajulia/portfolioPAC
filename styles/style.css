@@ -20,7 +20,37 @@ h1{
 
 .main-container{
     height: 65vh;
-    margin: 20px;
+    margin: 10vh;
     display: flex;
     align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5vh;
+  }
+  h3 {
+    font-size: 4vh;
+  }
+  .main-container {
+    flex-direction: column;
+    padding: 50px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 13vw;
+  }
+  h3 {
+    font-size: 8vw;
+  }
+  .main-container {
+    margin: 10px;
+  }
+  .main-content h1 {
+    word-break: break-word;
+    white-space: normal;
+  }
 }
