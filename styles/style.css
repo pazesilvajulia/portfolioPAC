@@ -19,7 +19,7 @@ h1{
 /*------------ CONTEÚDO PRINCIPAL DA LANDING PAGE --------------*/
 
 .main-container{
-    height: 65vh;
+    height: 50vh;
     margin: 10vh;
     display: flex;
     align-items: center;

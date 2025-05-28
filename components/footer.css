@@ -51,6 +51,7 @@
   .footer {
     flex-direction: row; /* Empilha verticalmente o conteúdo do footer */
     height: auto;
+    margin-top: 120px;
   }
 
   .socials {

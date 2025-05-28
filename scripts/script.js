@@ -1,39 +1,42 @@
 /* ------------- COMPONENTES -----------*/
 
+// Carrega o header e adiciona o evento de toggle dentro do .then()
 fetch('/components/header.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('header-container').innerHTML = data;
+
+    // Seleciona os elementos após inserir o header no DOM
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.direita');
+
+    // Adiciona o event listener para o toggle do menu
+    if (menuToggle && menu) {
+      menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+    }
   });
 
+// Carrega o footer normalmente
 fetch('/components/footer.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer-container').innerHTML = data;
   });
 
+/* ------------- CURSOR -----------*/
 
-  /* ------------- CURSOR -----------*/
-
-  document.addEventListener('mousemove', function(e) {
-    const particle = document.createElement('div');
-    particle.classList.add('particle');
-    document.body.appendChild(particle);
-    // Posiciona a partícula no mouse
-    particle.style.left = `${e.clientX}px`;
-    particle.style.top = `${e.clientY}px`;
-    // Remove a partícula após a animação
-    setTimeout(() => {
-      particle.remove();
-    }, 800);
-   });
+document.addEventListener('mousemove', function(e) {
+  const particle = document.createElement('div');
+  particle.classList.add('particle');
+  document.body.appendChild(particle);
+  particle.style.left = `${e.clientX}px`;
+  particle.style.top = `${e.clientY}px`;
+  setTimeout(() => {
+    particle.remove();
+  }, 800);
+});
 
 
-   /*----------- MENU TOGGLE ----------*/ 
-
-   const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.direita');
-
-    toggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
+ 

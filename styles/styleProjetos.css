@@ -1,64 +1,103 @@
-main{
+main {
     height: 100vh;
 }
 
-.container-projeto{
-    height: 70vh;
+.container-projeto {
+    height: auto;
     display: flex;
     align-items: center;
-    margin: 5vh 10vh 5vh 10vh;
     justify-content: space-evenly;
+    margin: 15vh 10vh;
+    flex-wrap: wrap; /* Permite quebrar linha quando necessário */
+    gap: 5vh; /* Espaço entre cards em telas menores */
 }
 
 /*----------------- CARD PROJETOS -------------------*/
 
 .card {
-  width: 250px;
-  height: auto;
-  background: white;
-  padding: .4em;
-  border-radius: 6px;
-  box-shadow: 20px 20px 100px 5px rgba(128, 128, 128, 0.575);
+    width: 250px;
+    height: auto;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    box-shadow: 20px 20px 100px 5px rgba(128, 128, 128, 0.575);
+    text-decoration: none; /* evita sublinhado no <a> */
 }
 
 .card-image {
-  background-color: rgb(236, 236, 236);
-  width: 100%;
-  height: 150px;
-  border-radius: 6px 6px 0 0;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
 }
 
 .card-image > img {
-  width: 100%;
-  height: 150px;
-  border-radius: 6px 6px 0 0;
+    width: 100%;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
 }
 
 .category {
-  text-transform: uppercase;
-  font-size: 2vh;
-  font-weight: 600;
-  color: #91057e;
-  padding: 10px 7px 0;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 600;
+    color: #91057e;
+    padding: 10px 7px 0;
 }
 
 .category:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .heading {
-  font-weight: 600;
-  color: rgb(88, 87, 87);
-  padding: 7px;
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
 }
 
 .heading:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .author {
-  color: gray;
-  font-weight: 400;
-  font-size: 11px;
-  padding-top: 20px;
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+}
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+@media (max-width: 1024px) {
+    .container-projeto {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5vh;
+        margin: 5vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90vw;
+    }
+
+    .card-image,
+    .card-image img {
+        height: 200px;
+    }
+
+    .category {
+        font-size: 2vh;
+    }
+
+    .heading {
+        font-size: 3vh;
+    }
+
+    .author {
+        font-size: 2vh;
+    }
 }
