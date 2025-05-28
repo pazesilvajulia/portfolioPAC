@@ -27,3 +27,13 @@ fetch('/components/footer.html')
       particle.remove();
     }, 800);
    });
+
+
+   /*----------- MENU TOGGLE ----------*/ 
+
+   const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.direita');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });

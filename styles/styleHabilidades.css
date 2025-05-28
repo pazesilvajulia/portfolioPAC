@@ -1,0 +1,46 @@
+.main-container{
+    height: 250vh;
+    margin: 10vh;
+    text-align: center;
+}
+
+.main-container > a{
+    display: inline-block;
+    -webkit-text-fill-color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 2vh;
+    border-radius: 5vh;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: large;
+    transition: transform 0.3s ease;
+}
+
+.main-container > a:hover{
+    transform: scale(1.1);
+}
+
+
+.sub-container{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 3vh;
+}
+
+.sub-container > h1{
+    font-size: 6vh;
+}
+
+.sub-container > p{
+    font-size: 3vh;
+}
+
+.sub-container > img{
+    margin: 2vh;
+    border: 1.5vh solid white;
+    height: 45vh;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.438);
+
+
+}
+
+
