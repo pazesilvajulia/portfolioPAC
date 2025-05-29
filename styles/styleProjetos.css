@@ -8,8 +8,8 @@ main {
     align-items: center;
     justify-content: space-evenly;
     margin: 15vh 10vh;
-    flex-wrap: wrap; /* Permite quebrar linha quando necessário */
-    gap: 5vh; /* Espaço entre cards em telas menores */
+    flex-wrap: wrap; 
+    gap: 5vh; 
 }
 
 /*----------------- CARD PROJETOS -------------------*/
@@ -21,7 +21,7 @@ main {
     padding: .4em;
     border-radius: 6px;
     box-shadow: 20px 20px 100px 5px rgba(128, 128, 128, 0.575);
-    text-decoration: none; /* evita sublinhado no <a> */
+    text-decoration: none; 
 }
 
 .card-image {

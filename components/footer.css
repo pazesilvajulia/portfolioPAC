@@ -6,19 +6,18 @@
   height: 12.9vh;
   align-items: center;
   justify-content: center;
-  padding: 0 20px; /* Dá espaçamento lateral */
+  padding: 0 20px;
 }
 
 .socials {
   display: flex;
   justify-content: space-between;
   gap: 2vh;
-  width: 50vw; /* Usa vw para largura relativa à tela */
-  max-width: 300px; /* Limita largura máxima */
-  flex-wrap: wrap; /* Permite quebrar linha se necessário */
+  width: 50vw;
+  max-width: 300px; 
+  flex-wrap: wrap; 
 }
 
-/* Logo com tamanho proporcional */
 .socials-logo {
   height: 6.5vh;
   transition: transform 0.3s ease;
@@ -29,40 +28,40 @@
   transform: scale(1.1);
 }
 
-/* Media queries para telas menores */
+/* ---------------- TELAS  MENORES ----------------------- */
 @media (max-width: 768px) {
   .footer {
-    height: auto; /* Ajusta altura automática */
+    height: auto;
     padding: 40px 20px;
   }
 
   .socials {
-    width: 100%; /* Usa toda a largura */
+    width: 100%;
     justify-content: center;
     gap: 1.5vh;
   }
 
   .socials-logo {
-    height: 5.5vh; /* Diminui tamanho das logos */
+    height: 5.5vh; 
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    flex-direction: row; /* Empilha verticalmente o conteúdo do footer */
+    flex-direction: row; 
     height: auto;
     margin-top: 120px;
   }
 
   .socials {
-    flex-direction: row; /* Empilha os ícones */
+    flex-direction: row; 
     width: auto;
     gap: 1vh;
     align-items: center;
   }
 
   .socials-logo {
-    height: 5vh; /* Ainda menor para celulares */
+    height: 5vh; 
     margin-bottom: 10px;
   }
 }

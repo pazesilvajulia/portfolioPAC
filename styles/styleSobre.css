@@ -16,7 +16,7 @@ span {
   flex-direction: row;
 }
 
-/* Ajuste geral da intro */
+/* ---------------- Ajuste geral da intro --------------------- */
 .intro {
   flex: 1 1 300px;
   display: flex;
@@ -52,16 +52,15 @@ span {
   margin: 0;
 }
 
-/* PHOTOCARDS */
+/*---------------- PHOTOCARDS -----------------*/
 .photos {
   margin-top: 10vh;
   position: relative;
   flex: 1 1 300px;
   max-width: 600px;
-  height: 260px; /* um pouco mais alto para caber os cards */
+  height: 260px;
 }
 
-/* Cards base */
 .card {
   width: 190px;
   height: 240px;
@@ -77,18 +76,15 @@ span {
   transform-origin: center bottom;
 }
 
-/* Imagem dentro do card */
 .card > img {
   height: 220px;
   margin-top: 10px;
 }
 
-/* Cores dos cards */
 #c2, #c3, #c4 {
   background-color: rgb(241, 241, 241);
 }
 
-/* Posicionamento inicial */
 #c2 {
   transform: translateX(-210px) rotate(-20deg);
 }
@@ -101,7 +97,6 @@ span {
   transform: translateX(20px) rotate(5deg);
 }
 
-/* Hover no container main - efeito espalhado */
 .photos:hover #c2 {
   transform: translateX(-260px) rotate(-30deg);
 }
@@ -114,7 +109,6 @@ span {
   transform: translateX(60px) rotate(10deg);
 }
 
-/* Hover individual mantém o card mais central */
 #c2:hover {
   transform: translateX(-130px) rotate(0deg) !important;
 }
@@ -127,7 +121,7 @@ span {
   transform: translateX(40px) rotate(0deg) !important;
 }
 
-/* --- RESPONSIVO --- */
+/*-------- RESPONSIVIDADE ----------*/
 
 @media (max-width: 900px) {
   .main-container {
@@ -146,8 +140,6 @@ span {
     margin: 0;
   }
 
-
-  /* Posicionamento cards para telas médias, menos espalhado */
   #c2 {
     position: relative;
     transform: translateX(0) rotate(0deg);
@@ -165,7 +157,6 @@ span {
     transform: translateX(0) rotate(0deg);
   }
 
-  /* Remove efeito hover para mobile/tablet */
   .photos:hover #c2,
   .photos:hover #c3,
   .photos:hover #c4,

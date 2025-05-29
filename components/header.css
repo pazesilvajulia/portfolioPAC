@@ -39,7 +39,7 @@ a:hover{
     cursor: pointer;
 }
 
-/* Responsivo */
+/*------------ RESPONSIVIDADE ------------- */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;

@@ -1,6 +1,5 @@
 /* ------------- COMPONENTES -----------*/
 
-// Carrega o header e adiciona o evento de toggle dentro do .then()
 fetch('/components/header.html')
   .then(response => response.text())
   .then(data => {
@@ -18,7 +17,6 @@ fetch('/components/header.html')
     }
   });
 
-// Carrega o footer normalmente
 fetch('/components/footer.html')
   .then(response => response.text())
   .then(data => {
